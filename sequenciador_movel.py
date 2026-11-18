@@ -48,7 +48,7 @@ class NoSequenciadorMovel:
                 _, seq_num = data.split(":")
                 self.sequence_number = int(seq_num)
                 self.is_sequencer = True
-                print(f"\n[🔄 EVENTO DE MIGRAÇÃO] Nó {self.node_id} (Porta {self.port}) ASSUMIU O PAPEL DE SEQUENCIADOR MÓVEL! Seq Atual: {self.sequence_number}\n")
+                print(f"\n[ EVENTO DE MIGRAÇÃO] Nó {self.node_id} (Porta {self.port}) ASSUMIU O PAPEL DE SEQUENCIADOR MÓVEL! Seq Atual: {self.sequence_number}\n")
                 conn.send("ACK_MIGRATION".encode('utf-8'))
                 return
 
@@ -72,7 +72,7 @@ class NoSequenciadorMovel:
             conn.close()
 
     def _trigger_migration(self):
-        print(f"\n[🔄 MIGRAÇÃO] Limite de {self.migration_limit} mensagens atingido no Nó {self.node_id}. Transferindo papel para a porta {self.next_port}...")
+        print(f"\n[ MIGRAÇÃO] Limite de {self.migration_limit} mensagens atingido no Nó {self.node_id}. Transferindo papel para a porta {self.next_port}...")
         self.is_sequencer = False
         self.message_count = 0
         
