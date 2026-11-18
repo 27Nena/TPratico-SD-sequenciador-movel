@@ -1,8 +1,8 @@
 # Trabalho Prático: Implementação de Sequenciador Móvel (Mobile Sequencer)
 
 **Disciplina:** Sistemas Distribuídos — UFSC Araranguá (2026/2)  
-**Acadêmica:** Nena António Impanta  
-**Professor:** Jim Lau  
+**Discente:** Nena António Impanta  
+**Docente:** Jim Lau  
 
 ---
 
